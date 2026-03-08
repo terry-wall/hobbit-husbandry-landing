@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+  }
+}
+
+@layer components {
+  .hobbit-card {
+    @apply bg-white/80 backdrop-blur-sm rounded-lg shadow-lg border border-hobbit-green/20 p-6 transition-all duration-300 hover:shadow-xl hover:scale-105;
+  }
+  
+  .hobbit-btn {
+    @apply bg-hobbit-green text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-hobbit-brown hover:shadow-lg transform hover:-translate-y-1;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}
